@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PlayMent</string>
+    <string name="label_login">Ingreso</string>
+    <string name="label_login_button">Ingresar</string>
+    <string name="label_register">Registro</string>
+    <string name="label_register_button">Registrarse</string>
+    <string name="label_first_name">Nombre(s)</string>
+    <string name="label_last_name">Apellido(s)</string>
+    <string name="label_country">País</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_password">Contraseña</string>
+    <string name="label_confirm_password">Confirmar Contraseña</string>
+    <string name="text_terms">Acepto todos los Términos y Condiciones</string>
+    <string name="text_no_account">¿No tienes una cuenta?</string>
+    <string name="label_register_link">Regístrate ahora</string>
+    <string name="label_user">Usuario</string>
+    <string name="validation_no_first_name">Es necesario capturar el nombre.</string>
+    <string name="validation_no_last_name">Es necesario capturar el apellido.</string>
+    <string name="validation_no_country">Es necesario seleccionar un país.</string>
+    <string name="validation_no_email">Es necesario capturar el correo.</string>
+    <string name="validation_wrong_email_format">Correo con formato incorrecto.</string>
+    <string name="validation_no_password">Es necesario capturar una contraseña.</string>
+    <string name="validation_no_password2">Es necesario confirmar la contraseña.</string>
+    <string name="validation_no_password_match">Las contraseñas no coinciden.</string>
+    <string name="validation_no_terms">Es necesario aceptar los términos y condiciones.</string>
+    <string-array name="countries">
+        <item>País</item>
+        <item>Canadá</item>
+        <item>Estados Unidos</item>
+        <item>México</item>
+    </string-array>
+</resources>

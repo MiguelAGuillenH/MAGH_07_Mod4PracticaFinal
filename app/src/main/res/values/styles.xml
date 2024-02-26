@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PlayMent_Activity">
+        <item name="android:background">@color/dark_gray</item>
+    </style>
+    <style name="PlayMent_TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorLink">@color/green</item>
+    </style>
+    <style name="PlayMent_EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">@color/green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+    </style>
+    <style name="PlayMent_Button">
+        <item name="backgroundTint">@color/dark_green</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="PlayMent_Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="backgroundTint">@color/green</item>
+    </style>
+    <style name="PlayMent_Spinner_Item" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="PlayMent_Spinner_DropDown_Item" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="PlayMent_CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/white</item>
+        <item name="buttonTint">@color/green</item>
+        <item name="buttonIconTint">@color/dark_gray</item>
+    </style>
+</resources>

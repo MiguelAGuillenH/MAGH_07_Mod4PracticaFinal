@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PlayMent_Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/BottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
+    <TextView
+        android:id="@+id/lblRegisterTitle"
+        android:text="@string/label_register"
+        style="@style/PlayMent_TextView"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/TopGuideline"
+        app:layout_constraintStart_toStartOf="@id/LeftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/RightGuideline" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btnRegisterSubmit"
+        app:layout_constraintEnd_toStartOf="@id/RightGuideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/LeftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/lblRegisterTitle"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgFirstName"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtRegisterFirstName"
+                style="@style/PlayMent_EditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:autofillHints="name"
+                android:hint="@string/label_first_name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgFirstName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgLastName"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgFirstName" />
+
+            <EditText
+                android:id="@+id/txtRegisterLastName"
+                style="@style/PlayMent_EditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="name"
+                android:hint="@string/label_last_name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgLastName"
+                app:layout_constraintTop_toBottomOf="@id/imgFirstName" />
+
+            <ImageView
+                android:id="@+id/imgCountry"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/globe_grid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLastName" />
+
+            <Spinner
+                android:id="@+id/comRegisterCountry"
+                style="@style/PlayMent_Spinner"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgCountry"
+                app:layout_constraintTop_toBottomOf="@id/imgLastName" />
+
+            <ImageView
+                android:id="@+id/imgEmail"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgCountry" />
+
+            <EditText
+                android:id="@+id/txtRegisterEmail"
+                style="@style/PlayMent_EditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="emailAddress"
+                android:hint="@string/label_email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgEmail"
+                app:layout_constraintTop_toBottomOf="@id/imgCountry" />
+
+            <ImageView
+                android:id="@+id/imgPassword"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgEmail" />
+
+            <EditText
+                android:id="@+id/txtRegisterPassword"
+                style="@style/PlayMent_EditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="password"
+                android:hint="@string/label_password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgPassword"
+                app:layout_constraintTop_toBottomOf="@id/imgEmail" />
+
+            <ImageView
+                android:id="@+id/imgPassword2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgPassword" />
+
+            <EditText
+                android:id="@+id/txtRegisterPassword2"
+                style="@style/PlayMent_EditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="password"
+                android:hint="@string/label_confirm_password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgPassword2"
+                app:layout_constraintTop_toBottomOf="@id/imgPassword" />
+
+            <CheckBox
+                android:id="@+id/chkTerms"
+                android:text="@string/text_terms"
+                style="@style/PlayMent_CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgPassword2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnRegisterSubmit"
+        android:text="@string/label_register_button"
+        style="@style/PlayMent_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/BottomGuideline"
+        app:layout_constraintStart_toStartOf="@id/LeftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/RightGuideline" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
